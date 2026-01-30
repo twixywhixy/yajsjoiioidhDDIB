@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Moon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link to Favicon -->
+    <link rel="icon" type="image/png" href="fvc.jpeg">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #000, #002244);
+            overflow-y: auto;
+        }
+
+        .carousel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            z-index: -1;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .content h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 0px 0px 20px #000;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .content p {
+            font-size: 1rem;
+            text-shadow: 0px 0px 10px #000;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center; /* Center the navbar items */
+            align-items: center;
+            flex-wrap: wrap; /* Ensure items wrap to avoid overflow */
+            padding: 1rem 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 6;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem; /* Adjusted margin for better spacing */
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        .gallery-container {
+            padding: 100px 2rem 50px 2rem;
+            color: #fff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 3px solid #000000;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .spacer {
+            height: 10px;
+        }
+
+        .footer {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 2.5rem;
+            }
+            .content p {
+                font-size: 0.9rem;
+            }
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content h1 {
+                font-size: 2rem;
+            }
+            .content p {
+                font-size: 0.8rem;
+            }
+            nav a {
+                margin: 0 0.25rem;
+                font-size: 0.8rem;
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel">
+        <img src="hy6.jpeg" alt="Image 1">
+        <img src="hy2.jpeg" alt="Image 2">
+        <img src="hy5.jpeg" alt="Image 3">
+    </div>
+
+    <nav>
+        <div><a href="index.html">Home</a></div>
+        <div>
+            <a href="S.html">Confession 😝</a>
+            <a href="moon.html">My 🌙</a>
+            <a href="W.html">Wishes</a>
+        </div>
+    </nav>
+
+    <div class="gallery-container">
+        <h1>My Moon</h1>
+        <div class="gallery">
+            <img src="hy1.jpeg" alt="Gallery Image 1">
+            <img src="hy4.jpeg" alt="Gallery Image 2">
+            <img src="hy18.jpeg" alt="Gallery Image 3">
+            <img src="hy29.jpeg" alt="Gallery Image 5">
+            <img src="hy8.jpeg" alt="Gallery Image 6">
+            <img src="hy20.jpeg" alt="Gallery Image 7">
+            <img src="hy16.jpeg" alt="Gallery Image 8">
+            <img src="hy14.jpeg" alt="Gallery Image 9">
+            <img src="hy6.jpeg" alt="Gallery Image 10">
+            <img src="hy12.jpeg" alt="Gallery Image 11">
+            <img src="hy15.jpeg" alt="Gallery Image 12">
+            <img src="hy13.jpeg" alt="Gallery Image 13">
+            <img src="hy17.jpeg" alt="Gallery Image 14">
+            <img src="hy25.jpeg" alt="Gallery Image 15">
+            <img src="hy28.jpeg" alt="Gallery Image 17">
+            <img src="hy7.jpeg" alt="Gallery Image 18">
+            <img src="hy21.jpeg" alt="Gallery Image 19">
+            <img src="hy22.jpeg" alt="Gallery Image 20">
+            <img src="hy23.jpeg" alt="Gallery Image 21">
+            <img src="hy14.jpeg" alt="Gallery Image 23">
+            <img src="hy26.jpeg" alt="Gallery Image 24">
+            <img src="hy5.jpeg" alt="Gallery Image 25">
+            <img src="hy19.jpeg" alt="Gallery Image 26">
+            <img src="hy30.jpeg" alt="Gallery Image 28">
+            <img src="hy9.jpeg" alt="Gallery Image 11">
+            <img src="hy31.jpeg" alt="Gallery Image 29">
+            <img src="hy32.jpeg" alt="Gallery Image 30">
+            <img src="hy33.jpeg" alt="Gallery Image 31">
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="footer">
+        <p>I love you so much my wonderful hayaati!</p>
+    </div>
+</body>
+</html>
